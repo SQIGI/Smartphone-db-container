@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SmartphoneForm</class>
+ <widget class="QDialog" name="SmartphoneForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Данные смартфона</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <property name="fieldGrowthPolicy">
+    <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelModel">
+     <property name="text">
+      <string>Модель:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEditModel"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelManufacturer">
+     <property name="text">
+      <string>Производитель:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEditManufacturer"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelOS">
+     <property name="text">
+      <string>ОС:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEditOS"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="labelMemory">
+     <property name="text">
+      <string>Память (ГБ):</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QSpinBox" name="spinBoxMemory">
+     <property name="maximum">
+      <number>1024</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="labelPrice">
+     <property name="text">
+      <string>Цена:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxPrice">
+     <property name="maximum">
+      <double>999999.99</double>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton_add">
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
